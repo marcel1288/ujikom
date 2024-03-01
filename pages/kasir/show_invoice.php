@@ -9,8 +9,7 @@ if (!isset($_SESSION['invoice_data'])) {
 
 $invoice_data = $_SESSION['invoice_data'];
 
-// Convert the updated_at timestamp to "Tanggal Bulan" format
-$tanggal_bulan = date('d F Y H:i:s', strtotime($invoice_data['updated_at']));
+$tanggal_bulan = date('d F Y H:i:s', time());
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +18,7 @@ $tanggal_bulan = date('d F Y H:i:s', strtotime($invoice_data['updated_at']));
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invoice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/style/show_invoice.css"> 
     <link rel="stylesheet" href="../../assets/style/print_invoice.css" media="print"> 
 </head>

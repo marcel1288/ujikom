@@ -14,13 +14,15 @@ $realName = $_SESSION['nama'];
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-    <meta name-"viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>BTR RA | Welcome Cashier!</title>
     <link rel="stylesheet" href="../assets/style/dashboard.css">
+    <img style="width: 100px; margin-center: 2rem;" src="../assets/images/btr.png" alt="btr">
 </head>
 <body>
     <h1>Hello, <?php echo htmlspecialchars($realName); ?>! Welcome to the dashboard!</h1>
-    <form action="../db/DB_logout.php" method-"post">
+    <form action="../db/DB_logout.php" method="post">
         <button type="submit" class="btn-logout">Log Out</button>
     </form>
     
@@ -28,9 +30,11 @@ $realName = $_SESSION['nama'];
         <h2>Dashboard</h2>
         <p>Welcome to the BTR RA cashier dashboard. You can manage products and perform other tasks here.</p>
     </div>
-    <h2>Manage product</h2>
-    <p>would you like to manage products?</p>
-    <p><a href="./kasir/manage_product.php" class="text-blue-500 underline">click here</a></p>
+    <div class="additional-content">
+        <h2>Manage product</h2>
+        <p>would you like to manage products?</p>
+        <p><a href="./kasir/manage_product.php" class="text-blue-500 underline">click here</a></p>
+    </div>
 </div>
 </body>
 </html>

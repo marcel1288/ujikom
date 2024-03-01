@@ -27,6 +27,7 @@ if(isset($_GET['id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Edit Product</title>
     <link rel="stylesheet" href="../../assets/style/update_product.css">
 </head>
@@ -40,6 +41,9 @@ if(isset($_GET['id'])) {
             <br>
             <label for="harga_produk">Product Price:</label>
             <input type="number" name="harga_produk" value="<?php echo htmlspecialchars($product['harga_produk']); ?>" required>
+            <br>
+            <label for="jumlah">Quantity:</label>
+            <input type="number" name="jumlah" value="<?php echo htmlspecialchars($product['jumlah']); ?>" required>
             <br>
             <button type="submit" name="update_product">Update Product</button>
         </form>

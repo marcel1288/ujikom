@@ -6,9 +6,10 @@ if (isset($_POST['update_product'])) {
     $id = $_POST['id'];
     $nama_produk = $_POST['nama_produk'];
     $harga_produk = $_POST['harga_produk'];
+    $jumlah = $_POST['jumlah'];
     
-    $stmt = $conn->prepare( "UPDATE products SET nama_produk = ?, harga_produk = ? WHERE id = ?");
-    $stmt->bind_param ("sii", $nama_produk, $harga_produk, $id);
+    $stmt = $conn->prepare("UPDATE products SET nama_produk = ?, harga_produk = ?, jumlah = ? WHERE id = ?");
+    $stmt->bind_param ("siii", $nama_produk, $harga_produk, $jumlah, $id);
 
     if ($stmt->execute()) {
         if ($stmt->affected_rows >0) {
