@@ -21,8 +21,10 @@ $tanggal_bulan = date('d F Y H:i:s', time());
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../../assets/style/show_invoice.css"> 
     <link rel="stylesheet" href="../../assets/style/print_invoice.css" media="print"> 
+    <link rel="stylesheet" href="../../assets/style/navbar.css">
 </head>
 <body>
+<?php include '../navbar.php'; ?>
     <div class="invoice-container">
         <h1>Invoice</h1>
         <table>

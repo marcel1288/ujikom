@@ -30,8 +30,10 @@ if(isset($_GET['id'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Edit Product</title>
     <link rel="stylesheet" href="../../assets/style/update_product.css">
+    <link rel="stylesheet" href="../../assets/style/navbar.css">
 </head>
 <body>
+<?php include '../navbar.php'; ?>
     <h1>Edit Product</h1>
     <div class="form-container">
         <form action="../../db/DB_update_product.php" method="post">

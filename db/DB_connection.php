@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "db_cashier";
+$dbname = "db_cashier2";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

@@ -18,7 +18,7 @@ if ($_SERVER[ "REQUEST_METHOD" ] == "POST" ) {
         $_SESSION['nama'] = $user['nama'];
         $_SESSION['username'] = $username;
         $_SESSION['user_id'] = $userl['id'];
-        header ("location: ./pages/dashboard.php");
+        header ("location: ./pages/dashboard/");
     } else {
         echo "Invalid username or password.";
     }
